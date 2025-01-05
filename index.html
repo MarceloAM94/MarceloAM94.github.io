@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Melissa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div>
+            <h1>¡Feliz Cumpleaños, Meli <3!</h1>
+            <p>Hoy celebramos a alguien increíble. Este día es todo sobre ti. 🎉</p>
+            <button class="button" onclick="scrollToSection1()">Vamos ❤️</button>
+        </div>
+    </div>
+
+    <section id="special-section" class="special-section">
+        <div class="card">
+            <div class="card-image">
+                <img src="corazao.gif" alt="Carta de cumpleaños">
+            </div>
+            <div class="card-content">
+                <h2>Un mensajito especial para ti</h2>
+                <p>Melissa, hoy cumples un añito más. Y quise hacerte este detalle para que veas lo especial que eres. Sabes lo mucho que significas para mi. Que en tan poco tiempo te has ganado un lugarcito en mi corazón. Eres una chica increíble, mereces que te pase todo lo lindo de esta vida. Y si bien esta vez tu cumpleaños no fue como lo esperabas, deseo de todo corazón que pases un día increíble. Te mando un besito y te deseo un feliz cumpleaños. 🎂✨</p>
+                <button class="button" onclick="scrollToSection2()">Vamos ❤️</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="birthday-reminder-section" class="birthday-reminder-section">
+        <div class="main-card">
+            <h2>En tu cumpleaños quiero recordarte que eres...</h2>
+            <div class="inner-cards">
+                <div class="inner-card">
+                    <div class="media">
+                        <img src="linda.heic" alt="Linda">
+                    </div>
+                    <p>Linda</p>
+                </div>
+                <div class="inner-card">
+                    <div class="media">
+                        <video autoplay loop muted src="carismatica.mp4"></video>
+                    </div>
+                    <p>Carismática</p>
+                </div>
+                <div class="inner-card">
+                    <div class="media">
+                        <video autoplay loop muted src="graciosa.mp4" ></video>
+                    </div>
+                    <p>Graciosa</p>
+                </div>
+                <div class="inner-card">
+                    <div class="media">
+                        <video autoplay loop muted src="fabulosa.mp4" ></video>
+                    </div>
+                    <p>Fabulosa</p>
+                </div>
+            </div>
+            <section class="next-section">
+                <button class="btn-next" onclick="scrollToNextSection()">Ver más 🎉</button>
+              </section>
+        </div>
+    </section>
+    
+    <section id="spotify-section" class="spotify-section">
+        <h2 class="spotify-title">Algunas canciones para ti 🎶</h2>
+        <div class="spotify-container">
+            <!-- Canción 1 -->
+            <iframe src="https://open.spotify.com/embed/track/6yyrsrci6u2nreFlhXSy3J?si=5a7bba37cf534f46" frameborder="0" allowtransparency="true" allow="autoplay; encrypted-media" ></iframe>
+            
+            <!-- Canción 2 -->
+            <iframe src="https://open.spotify.com/embed/track/1MbZQzTVCbZwdluitjREr1?si=debe50089a1f4462" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
+            <!-- Canción 3 -->
+            <iframe src="https://open.spotify.com/embed/track/6d3q0F9VNtdxQUTVlRcet6?si=af545bd58e5446ab"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
+            <!-- Canción 4 -->
+            <iframe src="https://open.spotify.com/embed/track/1tREl7Eo7dMS6JZe6wQKT5?si=b6b6e30ffb354c89"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </section>    
+
+    <script>
+        function scrollToSection1() {
+            document.getElementById('special-section').scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToSection2() {
+            document.getElementById('birthday-reminder-section').scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToNextSection() {
+        const nextSection = document.querySelector('.spotify-section');
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
